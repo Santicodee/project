@@ -1,0 +1,120 @@
+.card-box {
+  position: relative;
+  width: 320px;
+  height: 480px;
+  background: #191919;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.card-box::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  width: 100%;
+  height: 100%;
+
+  background: #f5f5f5;
+  transform: skewY(345deg);
+  transition: 0.5s;
+}
+.card-box:hover::before {
+  top: -70%;
+  transform: skewY(390deg);
+}
+.card-box::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-weight: 600;
+  font-size: 6em;
+  color: rgba(0, 0, 0, 0.1);
+}
+.dice-pic2 {
+  width: 200px;
+  height: 200px;
+  border-radius: 2em;
+}
+.card-box .imgBox {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  z-index: 1;
+}
+.card-box .contentBox {
+  position: relative;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 2;
+}
+.card-box,
+.contentBox h2 {
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.card-box .contentBox .price {
+  font-size: 24px;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.card-box .contentBox .buy {
+  position: relative;
+  top: 100px;
+  opacity: 0;
+  padding: 10px 30px;
+  margin-top: 15px;
+  color: #000000;
+  text-decoration: none;
+  background: #dfd7bf;
+  border-radius: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.5s;
+}
+.card-box:hover .contentBox .buy {
+  top: 0;
+  opacity: 1;
+}
+.mouse {
+  height: 300px;
+  width: auto;
+  transition: 0.3s;
+}
+.mouse:hover {
+  transform: scale(1.1);
+}
+.contentBox {
+  margin-top: 1em;
+}
+.card-box {
+  font-family: gaming;
+}
+.bigbox {
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+  gap: 2em;
+}
+.html {
+  color: #ffa500;
+}
+.css {
+  color: #0096ff;
+}
+.javas {
+  color: #ffff00;
+}
+.contentBox h2 {
+  margin-top: -0.1em;
+  font-size: 2rem;
+}
